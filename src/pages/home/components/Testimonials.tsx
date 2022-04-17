@@ -41,7 +41,7 @@ const Container = styled.section`
 -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
 clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 100%);
 position:absolute;
-top:120%;
+top:125%;
 background-color: #e6e7e9;
 height: 900px;
 width:100%;

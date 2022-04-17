@@ -9,42 +9,50 @@ export const Companies = () => {
     const companies = [
         {
             id: 1,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/spotify.com"
 
         },
         {
             id: 2,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/stripe.com"
 
         },
         {
             id: 3,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/apple.com"
 
         },
         {
             id: 4,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/amazon.com"
 
         },
         {
             id: 5,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/snapchat.com"
 
         },
         {
             id: 6,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/google.com"
 
         },
 
         {
             id: 7,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/tesla.com"
 
         }, {
             id: 8,
-            name: "Company"
+            name: "Company",
+            image: "https://logo.clearbit.com/hp.com"
 
         }
 
@@ -54,7 +62,7 @@ export const Companies = () => {
             {companies.map((company) => {
                 return (
                     <div key={company.id}>
-                        <p>{company.name}</p>
+                        <img src={company.image} className='company-image' alt='company'/>
                     </div>
                 )
             })}
@@ -64,10 +72,10 @@ export const Companies = () => {
 
 const Container = styled.section`
 width:60%;
-margin: 0 auto;
-margin-top: 20%;
+margin: 10% auto 0;
 display:grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 5px;
 div{
     width:350px;
     height:150px;
@@ -80,15 +88,20 @@ div{
   @media (max-width: 768px) {
     width:150px;
   }
-}
+ .company-image{
+      width:150px;
+      height:150px;
+  } 
+} 
 
 @media (max-width: 1440px) {
     width:65%;
-    margin-top: 250px;
+    margin: 200px auto 100px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 @media (max-width: 768px) {
     width:90%;
+    
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 `;
