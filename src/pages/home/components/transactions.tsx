@@ -1,7 +1,6 @@
 import React from 'react'
-import { IoIosArrowRoundForward, IoIosArrowForward } from 'react-icons/io';
+import {  IoIosArrowForward } from 'react-icons/io';
 import styled from 'styled-components';
-import crypto from '../../../assets/crypto.jpg'
 import '../../../App.css';
 
 

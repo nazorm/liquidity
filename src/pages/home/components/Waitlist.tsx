@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import globeImage from '../../../assets/globe.jpg'
-import { IoIosArrowRoundForward, IoIosArrowForward } from 'react-icons/io';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import '../../../App.css';
 
 

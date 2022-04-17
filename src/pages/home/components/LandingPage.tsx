@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import africanImage from '../../../assets/africa.jpg'
-import { IoIosArrowRoundForward, IoIosArrowForward } from 'react-icons/io';
+import {  IoIosArrowForward } from 'react-icons/io';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import '../../../App.css';
 
