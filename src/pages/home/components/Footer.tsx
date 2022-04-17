@@ -3,46 +3,44 @@ import styled from 'styled-components';
 import '../../../App.css';
 
 
-export const Footer = ()=>{
+export const Footer = () => {
     const date = new Date().getFullYear();
     return (
         <Wrapper>
-<ul>
-    <li className='logo'>
-        Liquidify
-    </li>
-      <li>
-          © {date} Liquidify. 
-       
-    </li>
-</ul>
-<ul>
-    <span>Product</span>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-</ul>
-<ul>
-    <span>Use Case</span>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-</ul>
-<ul>
-    <span>Business</span>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-    <li>Lorem Ipso</li>
-</ul>
+            <ul>
+                <li className='logo'>
+                    Liquidify
+                </li>
+                <li>
+                    © {date} Liquidify.
+
+                </li>
+            </ul>
+            <ul>
+                <span>Product</span>
+                <li>Overview</li>
+                <li>Cloud</li>
+                <li>Services</li>
+                <li>About us</li>
+                <li>Connect</li>
+                <li>Support</li>
+            </ul>
+            <ul>
+                <span>Use Case</span>
+                <li>Sales Force</li>
+                <li>Blog</li>
+                <li>Tools</li>
+                <li>Newsletter</li>
+                <li>Customers</li>
+                <li>Use Case</li>
+            </ul>
+            <ul>
+                <span>Business</span>
+                <li>Marketing</li>
+                <li>Operations</li>
+                <li>Partnership</li>
+                <li>Customers</li>
+            </ul>
         </Wrapper>
     )
 }
@@ -57,19 +55,26 @@ display:grid;
 grid-template-columns: repeat(4, minmax(250px, 1fr));
 
 ul{
+    
     .logo{
     font-size:20px;
     font-weight:900;
     opacity:1;
     }
     span{
-font-weight:700;
+        font-weight:700;
+        margin-bottom: 200px;
+
+    }
+    li:nth-child(1){
+        margin-top:20px;
     }
     li{
         font-weight:400;
         list-style:none;
         opacity:0.8;
         line-height:1.8;
+        margin: 5px 0 ;
         &:hover{
             cursor:pointer;
             color:grey;
@@ -77,7 +82,7 @@ font-weight:700;
     }
 }
 @media (max-width: 1440px) {
-    top: 205%;
+    top: 212%;
                 }
   @media (max-width: 768px) {
     top:247%;

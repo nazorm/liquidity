@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components';
 import africanImage from '../../../assets/africa.jpg'
 import {  IoIosArrowForward } from 'react-icons/io';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import '../../../App.css';
 
 export const LandingPage = () => {
@@ -24,9 +23,7 @@ export const LandingPage = () => {
                     </ul>
 
                 </nav>
-                <button className='hamburger'>
-                    <GiHamburgerMenu color='white' width='30px' />
-                </button>
+
                 <button className='btn btn__desktop'>Sign in {' '}
                     <IoIosArrowForward style={btnIconStyle} />
                 </button>
@@ -83,9 +80,10 @@ const Header = styled.div`
     left: 5%;
     position:absolute;
     color:white;
-    font-weight: 900;
+    
     top: 0;
     .logo{
+        font-weight: 900;
     font-size:20px;
     }
 .desktop-nav{
@@ -94,6 +92,7 @@ const Header = styled.div`
     ul{
         display:flex;
         li{
+            font-weight: 400;
             list-style: none;
             margin: 0 12px 0;
           &:hover{
@@ -148,7 +147,7 @@ top:35%;
         text-align:start;
         padding-right:50px;
             .intro-text-heading{
-            font-size:70px;
+            font-size:50px;
             font-weight:900;
             margin:0;
                 @media (max-width: 768px) {

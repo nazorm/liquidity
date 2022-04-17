@@ -34,7 +34,7 @@ const Container = styled.section`
    object-fit:cover;
 }
 @media (max-width: 1440px) {
-    top:175%;
+    top:180%;
                 }
 @media (max-width: 768px) {
     top:218%;
